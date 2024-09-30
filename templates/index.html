@@ -7,7 +7,13 @@
     <title>Face Recognition | MLWD</title>
 </head>
 <body>
-    <h1>Hi There</h1>
+    <h1>Welcome to Image Recognition</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_table }}
+        <button type="submit">Upload Image</button>
+    </form>
+
     <img src="{% static 'logo.png' %}" alt="">
 </body>
 </html>
