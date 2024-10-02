@@ -27,7 +27,7 @@ def index(req):
             context = {
                 "form":form,
                 "upload": True,
-                "results": results, 
+                "results": results[1], 
             }
             return render(req, 'index.html', context=context)
             
